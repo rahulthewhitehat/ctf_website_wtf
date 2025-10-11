@@ -11,7 +11,7 @@ body {
   color: #fc030d;
   text-shadow: 0 0 10px rgba(252, 3, 13, 0.7);
   position: relative;
-}
+} 
 .section-title { font-size: 2.8rem; }
 .newfont {
   font-family: "Share Tech Mono", monospace;
