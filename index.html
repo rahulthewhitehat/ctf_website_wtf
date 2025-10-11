@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WTF CTF | Cyber Sentinels</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+      html, body {
+        height: 100%; width: 100%;
+        overflow-x: hidden; overflow-y: auto;
+        margin: 0; padding: 0;
+    }
+    .finisher-header {
+        position: fixed; top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        z-index: -1; overflow-x: hidden;
+    }
+    </style>
+</head>
+
+<body>
+  <div id="preloader">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    <dotlottie-wc 
+      src="https://lottie.host/e17c49d1-8f3e-442c-963f-49629daf1f84/cSeMGb2hiK.lottie" 
+      style="width: 300px; height: 300px" speed="1" autoplay loop>
+    </dotlottie-wc>
+  </div>
+  
+  <div id="main-content">
+    <div class="finisher-header"></div> 
+    
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand custom-text-title" href="#">WTF</a>
+        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sponsors-section">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prizes-section">Prizes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rules-section">Rules</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq-section">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center my-5 py-5">
+      <div class="container py-5">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 text-center text-md-start my-4 ps-lg-5 animate-on-scroll fade-in-left">
+            <p class="text-light fs-5">Powered by <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/white/Unstop-Logo-White.svg" alt="Unstop Logo" width="80px"></p>
+            <h1 class="fw-bold custom-text" data-text="CYBER SENTINELS">WHAT<span class="new-font">'</span>S THE FLAG</h1>
+            <p class="tagline text-light mb-4">Defending the digital frontier through knowledge, innovation, and collaboration.</p>
+            <div class="my-3">
+              <a href="#" class="btn btn-glow btn-hacker me-3">Register Now</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center ps-lg-5 animate-on-scroll fade-in-right">
+            <dotlottie-wc 
+              src="https://lottie.host/42badcd0-982d-45f5-a589-9cdf102896f1/9f4TQpFEuK.lottie" 
+              style="width: 100%; max-width: 700px; height: auto;" speed="0.5" autoplay loop>
+            </dotlottie-wc>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center py-5 animate-on-scroll fade-in-up">
+        <h1 class="section-title" data-text="TIME LEFT">Event Countdown</h1>
+        <div id="countdown" class="countdown-timer mt-4">
+            <div class="time-card"><div id="days" class="time-value">00</div><div class="time-label">Days</div></div>
+            <div class="time-card"><div id="hours" class="time-value">00</div><div class="time-label">Hours</div></div>
+            <div class="time-card"><div id="minutes" class="time-value">00</div><div class="time-label">Minutes</div></div>
+            <div class="time-card"><div id="seconds" class="time-value">00</div><div class="time-label">Seconds</div></div>
+        </div>
+    </section>
+
+    <section id="about-section" class="py-5 animate-on-scroll fade-in-up">
+        <h1 class="section-title text-center py-4" data-text="about club">About The Club</h1>
+        <p class="newfont px-3 mx-lg-5 px-lg-5">Cyber Sentinels is the official cybersecurity club of Rajalakshmi Engineering College. Formed by passionate students and guided by expert faculty, the club focuses on building awareness and hands-on skills in <span>ethical hacking</span>, <span>digital forensics</span>, and <span>cyber defense</span>. We conduct internal CTFs, workshops, expert talks, and security awareness campaigns throughout the year.</p>
+        
+        <h1 class="section-title text-center py-4 mt-5" data-text="about college">About REC</h1>
+        <p class="newfont px-3 mx-lg-5 px-lg-5">Rajalakshmi Engineering College (REC), Thandalam is an autonomous institution affiliated with Anna University and approved by AICTE. Established in 1997, REC is known for its commitment to <span>academic excellence</span>, <span>innovation</span>, and <span>industry-driven learning</span>. REC has consistently ranked among the top engineering colleges in Tamil Nadu with excellent placement records with top MNCs.</p>
+    </section>
+
+    <section id="sponsors-section" class="sponsors-section py-5 animate-on-scroll fade-in-up">
+        <div class="container">
+            <h1 class="section-title text-center mb-5" data-text="Sponsors">Powered By</h1>
+            <div class="sponsors-grid">
+            
+                <div class="sponsor-card"><img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/white/Unstop-Logo-White.svg" alt="Sponsor 3" class="sponsor-logo" /><p class="sponsor-tag"></p></div>
+
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="sponsors-section" class="sponsors-section py-5 animate-on-scroll fade-in-up">
+        <div class="container">
+            <h1 class="section-title text-center mb-5" data-text="Sponsors">Our Sponsors</h1>
+            <div class="sponsors-grid">
+                <div class="sponsor-card"><img src="wyntrix.png" alt="Sponsor 1" class="sponsor-logo" /><p class="sponsor-tag">Community Partner</p></div>
+                <div class="sponsor-card"><img src="aslogoi.png" alt="Sponsor 2" class="sponsor-logo" /><p class="sponsor-tag">Voucher Sponsor</p></div>
+                <div class="sponsor-card"><img src=".png" alt="Sponsor 5" class="sponsor-logo" /><p class="sponsor-tag">Voucher Sponsor</p></div>
+                <div class="sponsor-card"><img src=".png" alt="Sponsor 4" class="sponsor-logo" /><p class="sponsor-tag">Internship Partner</p></div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="prizes-section" class="py-5">
+        <div class="container">
+            <h1 class="section-title text-center mb-5" data-text="Prizes & Perks">Prizes & Perks</h1>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 animate-on-scroll fade-in-up">
+                    <div class="prize-card">
+                        <div class="prize-icon"><i class="bi bi-award-fill"></i></div>
+                        <h4 class="prize-title">Ethical Hacking Vouchers</h4>
+                        <p class="prize-desc">Win one of three exclusive vouchers from <strong>Altered Security</strong>, each worth $249 USD (approx. ₹20,800), for their top-tier cybersecurity courses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="prize-card">
+                        <div class="prize-icon"><i class="bi bi-briefcase-fill"></i></div>
+                        <h4 class="prize-title">Internship Opportunities</h4>
+                        <p class="prize-desc">Top performers will get a chance to secure a coveted internship role at <strong>Altrusity</strong>, our official Internship Partner, and kickstart their careers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="prize-card">
+                        <div class="prize-icon"><i class="bi bi-ticket-percent-fill"></i></div>
+                        <h4 class="prize-title">Premium Vouchers</h4>
+                        <p class="prize-desc">Exclusive vouchers sponsored by <strong>FreshBooks</strong> to reward your skills, hard work, and dedication throughout the competition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules-section" class="py-5 animate-on-scroll fade-in-up">
+        <div class="container" style="max-width: 800px;">
+            <div class="rules-card glass-rule text-light p-4 p-md-5">
+                <h2 class="section-title mb-4 text-center">Rules & Guidelines</h2>
+                <p class="text-center mb-4">All participants are expected to maintain the highest standards of ethics, fairness, and professionalism throughout the event.</p>
+                <ol class="rules-list">
+                    <li>Collaboration is strictly limited to your registered teammates.</li>
+                    <li>Malicious activities, including attacking other teams, the platform, or any external systems, will lead to immediate disqualification.</li>
+                    <li>Sharing flags, answers, or write-ups during the event is not allowed.</li>
+                    <li>Automated tools, brute-force methods, or any kind of unauthorized external assistance are strictly prohibited unless specifically permitted in a challenge.</li>
+                    <li>Any attempt to disrupt, overload, or perform DoS attacks on the platform or infrastructure will result in permanent disqualification.</li>
+                    <li>Teams must have 2 to 3 members and register on Unstop before the deadline.</li>
+                    <li>Only valid submissions in the correct flag format will be accepted.</li>
+                    <li>In the case of a tie, earlier submission time will determine the ranking.</li>
+                    <li>Violations of the rules or unethical conduct at any point will result in disqualification at the organizers’ discretion.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-5 animate-on-scroll fade-in-up" id="faq-section">
+        <h1 class="section-title text-center mb-5" data-text="FAQs">FAQs</h1>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item glass-card mb-3"><h2 class="accordion-header" id="faq1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">What is What's The Flag?</button></h2><div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">What's The Flag (WTF) is a Capture The Flag (CTF) competition organized by Cyber Sentinels, focusing on cybersecurity challenges and ethical hacking.</div></div></div>
+            <div class="accordion-item glass-card mb-3"><h2 class="accordion-header" id="faq2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">Who can participate?</button></h2><div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Anyone interested in cybersecurity can join, especially students who want to build and test their real-world skills in a competitive environment.</div></div></div>
+            <div class="accordion-item glass-card mb-3"><h2 class="accordion-header" id="faq3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">Do I need prior experience?</button></h2><div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No, beginners are welcome! The challenges are designed with varying difficulty levels to be engaging for everyone from novices to experts.</div></div></div>
+            <div class="accordion-item glass-card mb-3"><h2 class="accordion-header" id="faq4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">What topics will the CTF cover?</button></h2><div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The challenges will span various domains including Web Exploitation, Cryptography, Reverse Engineering, Digital Forensics, and OSINT (Open-Source Intelligence).</div></div></div>
+            <div class="accordion-item glass-card mb-3"><h2 class="accordion-header" id="faq5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">Is there a registration fee?</button></h2><div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No, participation in 'What's The Flag' is completely free of charge. Just register your team on Unstop.</div></div></div>
+        </div>
+    </section>
+
+    <div class="container py-5" id="contact-section">
+        <h1 class="section-title text-center mb-5" data-text="contact">Contact Us</h1>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5 animate-on-scroll fade-in-up"><div class="contact-card p-4"><div class="d-flex align-items-center gap-3"><img src="Rahul Babu M P .webp" alt="Rahul Babu" class="card-img"><div><h5 class="mb-0 fw-bold">Rahul Babu M P</h5><p class="mb-1 text-secondary">President</p></div></div><hr><p><i class="bi bi-envelope-fill icon pe-3"></i>221401069@rajalakshmi.edu.in</p><p><i class="bi bi-linkedin icon pe-3"></i> Rahul Babu M P</p><p><i class="bi bi-telephone-fill icon pe-3"></i> +91 95148 03391</p></div></div>
+            <div class="col-md-5 animate-on-scroll fade-in-up" style="animation-delay: 0.2s;"><div class="contact-card p-4"><div class="d-flex align-items-center gap-3"><img src="KeerthanaaK.JPG" alt="Keerthanaa K" class="card-img"><div><h5 class="mb-0 fw-bold">Keerthanaa K</h5><p class="mb-1 text-secondary">Vice President</p></div></div><hr><p><i class="bi bi-envelope-fill icon pe-3"></i> 231901023@rajalakshmi.edu.in</p><p><i class="bi bi-linkedin icon pe-3"></i> Keerthanaa K</p><p><i class="bi bi-telephone-fill icon pe-3"></i> +91 74186 01640</p></div></div>
+        </div>
+    </div>
+
+    <section class="event-location py-5 mx-4 animate-on-scroll fade-in-up">
+        <div class="container">
+            <div class="row g-5 align-items-center last-section p-4 rounded-4">
+                <div class="col-md-6">
+                    <div class="map-container rounded-4 overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.204558237937!2d80.01574331526757!3d12.95878299086476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528ba43628d339%3A0x67448b534438992!2sRajalakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1672661555577!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 text-light">
+                    <div class="d-flex justify-content-center align-items-center gap-4 mb-4 footer-logos">
+                        <img src="rec_logo.png" alt="Cyber Sentinels Logo" class="img-fluid">
+                        <img src="cslogo.png" alt="Rajalakshmi College Logo" class="img-fluid">
+                    </div>
+                    <ul class="list-unstyled fs-5 text-center text-md-start">
+                        <li class="mb-3"><i class="bi bi-geo-alt-fill text-hacker me-2"></i><span>Online Event</span></li>
+                        <li class="mb-3"><i class="bi bi-calendar-event-fill text-hacker me-2"></i><span>18th October 2025</span></li>
+                        <li class="mb-3"><i class="bi bi-clock-fill text-hacker me-2"></i><span>09:00 AM - 09:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="finisher-header.es5.min.js"></script>
+  <script>
+    new FinisherHeader({
+      "count": 100, "size": { "min": 2, "max": 8, "pulse": 0 },
+      "speed": { "x": { "min": 0, "max": 0.4 }, "y": { "min": 0, "max": 0.6 } },
+      "colors": { "background": "#111119", "particles": ["#ff2d2d", "#ff8a2d", "#ffee2d"] },
+      "blending": "overlay", "opacity": { "center": 1, "edge": 0.1 }, "skew": 0, "shapes": ["c"]
+    });
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
