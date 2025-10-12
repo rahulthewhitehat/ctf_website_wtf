@@ -24,6 +24,10 @@ body {
 .text-hacker { color: #fc030d; }
 
 /* --- Navbar --- */
+.navbar-logo {
+  height: 40px; 
+  width: auto;  
+}
 .custom-navbar {
   backdrop-filter: blur(10px);
   background-color: rgba(17, 17, 25, 0.7);

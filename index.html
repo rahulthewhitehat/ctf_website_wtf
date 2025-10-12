@@ -38,7 +38,9 @@
     
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand custom-text-title" href="#">WTF</a>
+        <a class="navbar-brand" href="https://wtf.cybersentinels.xyz" target="_blank">
+          <img src="nav logo.png" alt="Brand Logo" class="navbar-logo">
+        </a>
         <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="hamburger-icon"></span>
         </button>
@@ -59,11 +61,175 @@
       <div class="container py-5">
         <div class="row align-items-center flex-column-reverse flex-md-row">
           <div class="col-md-6 text-center text-md-start my-4 ps-lg-5 animate-on-scroll fade-in-left">
-            <p class="text-light fs-5">Powered by <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/white/Unstop-Logo-White.svg" alt="Unstop Logo" width="80px"></p>
+            <p class="text-light fs-5 text-md-start/* --- General & Fonts --- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: #111119;
+  font-family: 'Share Tech Mono', monospace;
+  color: #f0f0f0;
+}
+.section-title, .custom-text, .custom-text-title {
+  font-family: 'Russo One', sans-serif;
+  color: #fc030d;
+  text-shadow: 0 0 10px rgba(252, 3, 13, 0.7);
+  position: relative;
+} 
+.section-title { font-size: 2.8rem; }
+.newfont {
+  font-family: "Share Tech Mono", monospace;
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+.newfont span { color: #fc030d; font-weight: bold; }
+.text-hacker { color: #fc030d; }
+
+/* --- Navbar --- */
+.navbar-logo {
+  height: 40px; 
+  width: auto;  
+}
+.custom-navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 25, 0.7);
+  box-shadow: 0 0 15px rgba(252, 3, 13, 0.5);
+  border-bottom: 1px solid rgba(252, 3, 13, 0.3);
+  padding: 0.8rem 2rem;
+}
+.navbar-brand { font-size: 1.8rem !important; letter-spacing: 2px; }
+.navbar-nav .nav-link {
+  color: #f0f0f0 !important; font-weight: 600; font-size: 1rem;
+  margin-left: 1.5rem; transition: all 0.3s ease; position: relative;
+}
+.navbar-nav .nav-link:hover { color: #fc030d !important; text-shadow: 0 0 10px #fc030d; }
+.navbar-nav .nav-link::after {
+    content: ''; position: absolute; width: 0; height: 2px;
+    bottom: -5px; left: 0; background-color: #fc030d; transition: width 0.3s;
+}
+.navbar-nav .nav-link:hover::after { width: 100%; }
+.hamburger { background: transparent !important; border: none !important; box-shadow: none !important; }
+.hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
+  display: block; background-color: #fc030d; height: 2px; width: 25px;
+  position: relative; transition: all 0.3s ease-in-out; content: '';
+}
+.hamburger-icon::before { top: -8px; }
+.hamburger-icon::after { top: 8px; }
+.navbar-toggler[aria-expanded="true"] .hamburger-icon { background-color: transparent; }
+.navbar-toggler[aria-expanded="true"] .hamburger-icon::before { transform: rotate(45deg); top: 0; }
+.navbar-toggler[aria-expanded="true"] .hamburger-icon::after { transform: rotate(-45deg); top: 0; }
+
+/* --- Hero Section --- */
+.hero-section { min-height: 100vh; color: #fc030d; overflow: hidden; }
+.custom-text { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: bold; }
+.new-font { font-family: monospace; }
+.tagline { font-size: 1.2rem; color: #ccc; }
+.btn-hacker {
+  background-color: #fc030d; color: #111; border: 2px solid #fc030d;
+  padding: 0.8rem 2rem; font-weight: bold; text-transform: uppercase;
+  letter-spacing: 1px; transition: all 0.3s ease;
+  box-shadow: 0 0 10px #fc030d, inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.btn-hacker:hover { background-color: transparent; color: #fc030d; box-shadow: 0 0 20px #fc030d; }
+
+/* --- Custom Countdown Timer --- */
+.countdown-timer { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.time-card {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(252, 3, 13, 0.3);
+  border-radius: 10px; padding: 20px; min-width: 120px; text-align: center;
+  backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.time-value { font-family: 'Russo One', sans-serif; font-size: 3rem; color: #fff; }
+.time-label { font-size: 1rem; color: #fc030d; text-transform: uppercase; }
+
+/* --- Sponsors Section --- */
+.sponsors-section { background-color: rgba(0,0,0,0.2); }
+.sponsors-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+.sponsor-card {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(252, 3, 13, 0.3);
+  backdrop-filter: blur(10px); border-radius: 12px; padding: 20px 25px;
+  width: 180px; transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(252, 3, 13, 0.2);
+}
+.sponsor-card:hover { transform: translateY(-8px); box-shadow: 0 0 20px rgba(252, 3, 13, 0.5); }
+.sponsor-logo { width: 100%; height: 70px; object-fit: contain; margin-bottom: 10px; }
+.sponsor-tag { font-size: 0.95rem; font-weight: 500; color: #fc030d; text-align: center; }
+
+/* --- Prizes & Perks Section --- */
+.prize-card {
+  background: rgba(252, 3, 13, 0.05); border: 1px solid rgba(252, 3, 13, 0.3);
+  border-radius: 15px; padding: 30px; text-align: center; backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;
+}
+.prize-card:hover { transform: translateY(-10px); box-shadow: 0 0 25px rgba(252, 3, 13, 0.5); }
+.prize-icon { font-size: 3rem; color: #fc030d; margin-bottom: 20px; }
+.prize-title { font-family: 'Russo One', sans-serif; color: #fff; margin-bottom: 15px; font-size: 1.5rem; }
+.prize-desc { color: #ccc; line-height: 1.6; }
+
+/* --- Rules Section --- */
+.glass-rule {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(252, 3, 13, 0.2);
+  border-radius: 15px; backdrop-filter: blur(10px); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.rules-list {
+  padding-left: 20px; font-size: 1.1rem; line-height: 2; color: #f0f0f0;
+}
+.rules-list li { margin-bottom: 10px; }
+.rules-list li::marker { color: #fc030d; font-weight: bold; }
+
+/* --- FAQ Section --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(252, 3, 13, 0.3);
+  border-radius: 12px; backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); color: white;
+}
+.accordion-button { background: transparent; color: #fc030d; font-family: 'Russo One', sans-serif; transition: all 0.3s ease; }
+.accordion-button:not(.collapsed) { background-color: rgba(252, 3, 13, 0.1); color: #fff; box-shadow: none; }
+.accordion-body { color: #ddd; font-size: 1rem; }
+.accordion-item { border: none; }
+
+/* --- Contact & Location --- */
+.contact-card {
+  border-left: 4px solid #fc030d; color: whitesmoke; background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px; backdrop-filter: blur(10px); transition: transform 0.3s ease; height: 100%;
+}
+.contact-card:hover { transform: scale(1.02); }
+.contact-card hr { border-top: 1px solid rgba(252, 3, 13, 0.4); }
+.card-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #fc030d; }
+.icon { color: #fc030d; font-size: 1.2rem; }
+.last-section {
+  border: 1px solid rgba(252, 3, 13, 0.3); background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px); transition: transform 0.3s ease;
+}
+.map-container { box-shadow: 0 0 20px rgba(252, 3, 13, 0.4); }
+.footer-logos img { max-height: 80px; filter: grayscale(30%) brightness(1.5); }
+
+/* --- Loader & Animations --- */
+#preloader {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background-color: #111119; display: flex; align-items: center; justify-content: center;
+  z-index: 9999; transition: opacity 1s ease, visibility 1s ease;
+}
+#preloader.fade-out { opacity: 0; visibility: hidden; }
+#main-content { opacity: 0; animation: fadeIn 1s ease forwards; animation-delay: 0.5s; }
+.animate-on-scroll { opacity: 0; transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.fade-in-up { transform: translateY(30px); }
+.fade-in-left { transform: translateX(-30px); }
+.fade-in-right { transform: translateX(30px); }
+.animate-on-scroll.is-visible { opacity: 1; transform: translateY(0) translateX(0); }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .section-title { font-size: 2.2rem; }
+  .newfont { font-size: 1.1rem; }
+  .custom-text { font-size: 2.8rem; }
+  .footer-logos img { max-height: 60px; }
+}">Powered by <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/white/Unstop-Logo-White.svg" alt="Unstop Logo" width="80px"></p>
             <h1 class="fw-bold custom-text" data-text="CYBER SENTINELS">WHAT<span class="new-font">'</span>S THE FLAG</h1>
             <p class="tagline text-light mb-4">Defending the digital frontier through knowledge, innovation, and collaboration.</p>
+            <p>18th October 2025</p>
             <div class="my-3">
-              <a href="https://unstop.com/p/whats-the-flag-rajalakshmi-engineering-college-rec-chennai-1553360" target="_blank" class="btn btn-glow btn-hacker me-3">Register Now</a>
+              <a href="https://unstop.com/p/whats-the-flag-rajalakshmi-engineering-college-rec-chennai-1553360"  target="_blank" class="btn btn-glow btn-hacker me-3">Register Now</a>
             </div>
           </div>
           <div class="col-md-6 text-center ps-lg-5 animate-on-scroll fade-in-right">
@@ -97,11 +263,8 @@
     <section id="sponsors-section" class="sponsors-section py-5 animate-on-scroll fade-in-up">
         <div class="container">
             <h1 class="section-title text-center mb-5" data-text="Sponsors">Powered By</h1>
-            <div class="sponsors-grid">
-            
+            <div class="sponsors-grid text-center">
                 <div class="sponsor-card"><img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/white/Unstop-Logo-White.svg" alt="Sponsor 3" class="sponsor-logo" /><p class="sponsor-tag"></p></div>
-
-                
             </div>
         </div>
     </section>
@@ -110,16 +273,13 @@
         <div class="container">
             <h1 class="section-title text-center mb-5" data-text="Sponsors">Our Sponsors</h1>
             <div class="sponsors-grid">
-                <div class="sponsor-card"><img src="wyntrix.png" alt="Sponsor 1" class="sponsor-logo" /><p class="sponsor-tag">Community Partner</p></div>
+                <div class="sponsor-card"><img src="wyntrix.png" alt="Sponsor 1" class="sponsor-logo" /><p class="sponsor-tag">Marketing Sponsor</p></div>
                 <div class="sponsor-card"><img src="aslogoi.png" alt="Sponsor 2" class="sponsor-logo" /><p class="sponsor-tag">Voucher Sponsor</p></div>
                 <div class="sponsor-card"><img src="fblogo.jpg" alt="Sponsor 5" class="sponsor-logo" /><p class="sponsor-tag">Voucher Sponsor</p></div>
                 <div class="sponsor-card"><img src="altlogo.PNG" alt="Sponsor 4" class="sponsor-logo" /><p class="sponsor-tag">Internship Partner</p></div>
-                
             </div>
         </div>
     </section>
-
-    
 
     <section id="prizes-section" class="py-5">
         <div class="container">
@@ -141,7 +301,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 animate-on-scroll fade-in-up" style="animation-delay: 0.4s;">
                     <div class="prize-card">
-                        <div class="prize-icon"><i class="bi bi-ticket-percent-fill"></i></div>
+                        <div class="prize-icon"><i class="bi bi-ticket-perforated-fill"></i></div>
                         <h4 class="prize-title">Premium Vouchers</h4>
                         <p class="prize-desc">Exclusive vouchers sponsored by <strong>FreshBooks</strong> to reward your skills, hard work, and dedication throughout the competition.</p>
                     </div>
@@ -185,8 +345,7 @@
         <h1 class="section-title text-center mb-5" data-text="contact">Contact Us</h1>
         <div class="row g-4 justify-content-center">
             <div class="col-md-5 animate-on-scroll fade-in-up"><div class="contact-card p-4"><div class="d-flex align-items-center gap-3"><img src="rahul.webp" alt="Rahul Babu" class="card-img"><div><h5 class="mb-0 fw-bold">Rahul Babu M P</h5><p class="mb-1 text-secondary">President</p></div></div><hr><p><i class="bi bi-envelope-fill icon pe-3"></i>221401069@rajalakshmi.edu.in</p><p><i class="bi bi-linkedin icon pe-3"></i> Rahul Babu M P</p><p><i class="bi bi-telephone-fill icon pe-3"></i> +91 95148 03391</p></div></div>
-            <div class="col-md-5 animate-on-scroll fade-in-up" style="animation-delay: 0.2s;"><div class="contact-card p-4"><div class="d-flex align-items-center gap-3"><img src="keerthana.JPG"
-               alt="Keerthanaa K" class="card-img"><div><h5 class="mb-0 fw-bold">Keerthanaa K</h5><p class="mb-1 text-secondary">Vice President</p></div></div><hr><p><i class="bi bi-envelope-fill icon pe-3"></i> 231901023@rajalakshmi.edu.in</p><p><i class="bi bi-linkedin icon pe-3"></i> Keerthanaa K</p><p><i class="bi bi-telephone-fill icon pe-3"></i> +91 74186 01640</p></div></div>
+            <div class="col-md-5 animate-on-scroll fade-in-up" style="animation-delay: 0.2s;"><div class="contact-card p-4"><div class="d-flex align-items-center gap-3"><img src="keerthana.JPG" alt="Keerthanaa K" class="card-img"><div><h5 class="mb-0 fw-bold">Keerthanaa K</h5><p class="mb-1 text-secondary">Vice President</p></div></div><hr><p><i class="bi bi-envelope-fill icon pe-3"></i> 231901023@rajalakshmi.edu.in</p><p><i class="bi bi-linkedin icon pe-3"></i> Keerthanaa K</p><p><i class="bi bi-telephone-fill icon pe-3"></i> +91 74186 01640</p></div></div>
         </div>
     </div>
 
@@ -195,7 +354,7 @@
             <div class="row g-5 align-items-center last-section p-4 rounded-4">
                 <div class="col-md-6">
                     <div class="map-container rounded-4 overflow-hidden">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.204558237937!2d80.01574331526757!3d12.95878299086476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528ba43628d339%3A0x67448b534438992!2sRajalakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1672661555577!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.425820301846!2d80.00089457489368!3d13.00853338731023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528c9ebac84723%3A0x18e2bf88dfefa3ed!2sRajalakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1757437865606!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
                 <div class="col-md-6 text-light">
